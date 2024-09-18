@@ -28,6 +28,7 @@ services:
       MYSQL_PASSWORD: Dutran@2309
     volumes:
       - mysql_data:/var/lib/mysql
+      - ./build/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - toeic
     ports:
