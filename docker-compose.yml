@@ -22,6 +22,8 @@ services:
   mysql:
     build:
       context: ./.build/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Dutran@2309
     container_name: mysql_db
     volumes:
       - mysql_data:/var/lib/mysql

@@ -1,8 +1,6 @@
-FROM mysql:latest
+FROM mysql
 
-MAINTAINER me
-
-ENV MYSQL_ROOT_PASSWORD: Dutran@2309 
+MAINTAINER me 
 
 ADD init.sql /docker-entrypoint-initdb.d/
 
