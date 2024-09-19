@@ -1,4 +1,4 @@
-FROM mysql:lastest
+FROM mysql:latest
 
 MAINTAINER me
 
